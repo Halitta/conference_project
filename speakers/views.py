@@ -38,3 +38,10 @@ def speaker_detail(request, speaker_id):
         raise Http404("Speaker does not exist.")
 
     return render(request, 'speakers/speaker_detail.html', {'speaker': speaker})
+
+def speaker_update(request, speaker_id):
+    speaker = {'name': 'Speaker 1', 'bio': 'Dummy Bio', 'contact': 'Dummy Contact Info'}
+    return render(request, 'speakers/speaker_update.html', {'speaker': speaker})
+
+def speaker_delete(request, speaker_id):
+    return render(request, 'speakers/speaker_delete.html')
