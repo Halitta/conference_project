@@ -4,4 +4,4 @@
 <p>Contact: {{ speaker.contact }}</p>
 <!-- Add more details as required -->
 <a href="{% url 'speakers:speaker_update' speaker.id %}" class="update-link">Update</a>
-{% comment %} <a href="{% url 'speakers:speaker_delete' speaker.id %}" class="delete-link">Delete</a> {% endcomment %}
+<a href="{% url 'speakers:speaker_delete' speaker.id %}" class="delete-link">Delete</a>
